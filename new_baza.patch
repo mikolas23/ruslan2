@@ -1,0 +1,238 @@
+Index: data/itportal.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- data/itportal.sql	(revision )
++++ data/itportal.sql	(revision )
+@@ -0,0 +1,128 @@
++-- phpMyAdmin SQL Dump
++-- version 4.0.4
++-- http://www.phpmyadmin.net
++--
++-- Host: localhost
++-- Generation Time: Mar 22, 2014 at 05:02 PM
++-- Server version: 5.6.12-log
++-- PHP Version: 5.4.12
++
++SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
++SET time_zone = "+00:00";
++
++
++/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
++/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
++/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
++/*!40101 SET NAMES utf8 */;
++
++--
++-- Database: `itportal`
++--
++CREATE DATABASE IF NOT EXISTS `itportal` DEFAULT CHARACTER SET utf32 COLLATE utf32_unicode_520_ci;
++USE `itportal`;
++
++-- --------------------------------------------------------
++
++--
++-- Table structure for table `category`
++--
++
++CREATE TABLE IF NOT EXISTS `category` (
++  `id` int(10) NOT NULL AUTO_INCREMENT,
++  `title` varchar(32) NOT NULL,
++  `position` varchar(22) NOT NULL,
++  PRIMARY KEY (`id`)
++) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
++
++--
++-- Dumping data for table `category`
++--
++
++INSERT INTO `category` (`id`, `title`, `position`) VALUES
++(1, 'Новая5', 'вверх'),
++(2, 'Новая5', 'вверх'),
++(3, 'dfssdf', 'зліва'),
++(4, 'Новая5', 'вверх'),
++(5, 'Протеїни', 'зліва'),
++(6, 'Жири', 'зліва'),
++(7, 'Білки', 'зліва'),
++(8, 'Амінокислот и', 'зліва'),
++(9, 'Коктелі', 'left'),
++(10, 'Жири', 'зліва');
++
++-- --------------------------------------------------------
++
++--
++-- Table structure for table `entry`
++--
++
++CREATE TABLE IF NOT EXISTS `entry` (
++  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
++  `Creatorid` int(10) unsigned NOT NULL,
++  `Creatorusername` varchar(16) COLLATE utf32_unicode_520_ci NOT NULL,
++  `Cretiondate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
++  `Caption` varchar(64) COLLATE utf32_unicode_520_ci NOT NULL,
++  `Content` text COLLATE utf32_unicode_520_ci NOT NULL,
++  PRIMARY KEY (`ID`)
++) ENGINE=InnoDB  DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_520_ci AUTO_INCREMENT=2 ;
++
++--
++-- Dumping data for table `entry`
++--
++
++INSERT INTO `entry` (`ID`, `Creatorid`, `Creatorusername`, `Cretiondate`, `Caption`, `Content`) VALUES
++(1, 0, 'admin', '2014-03-20 18:12:52', 'Test caption', 'This is a test entry. Its only for test. A real entry will have usefull information in it.');
++
++-- --------------------------------------------------------
++
++--
++-- Table structure for table `forumpost`
++--
++
++CREATE TABLE IF NOT EXISTS `forumpost` (
++  `ID` int(64) unsigned NOT NULL AUTO_INCREMENT,
++  `Creatorid` int(10) unsigned NOT NULL,
++  `Caption` varchar(32) COLLATE utf32_unicode_520_ci DEFAULT NULL COMMENT 'Always null for comments, never null for new entry.',
++  `Message` text COLLATE utf32_unicode_520_ci NOT NULL,
++  `Creationdate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
++  `Lastupdate` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
++  `Entryid` int(10) unsigned NOT NULL,
++  `Postnumber` int(10) unsigned NOT NULL DEFAULT '0',
++  `Locationid` int(10) unsigned NOT NULL,
++  PRIMARY KEY (`ID`)
++) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_520_ci AUTO_INCREMENT=1 ;
++
++-- --------------------------------------------------------
++
++--
++-- Table structure for table `users`
++--
++
++CREATE TABLE IF NOT EXISTS `users` (
++  `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
++  `Password` varchar(128) COLLATE utf32_unicode_520_ci NOT NULL,
++  `Login` varchar(16) COLLATE utf32_unicode_520_ci NOT NULL,
++  `Username` varchar(16) COLLATE utf32_unicode_520_ci DEFAULT NULL,
++  `Name` varchar(48) COLLATE utf32_unicode_520_ci DEFAULT NULL,
++  `Email` varchar(64) COLLATE utf32_unicode_520_ci NOT NULL,
++  `Address` varchar(64) COLLATE utf32_unicode_520_ci DEFAULT NULL,
++  `Comments` text COLLATE utf32_unicode_520_ci,
++  `Birtday` date DEFAULT NULL,
++  `Language` int(1) unsigned NOT NULL DEFAULT '0' COMMENT '0-ukrainian,1-english',
++  `Style` int(1) NOT NULL DEFAULT '0',
++  `Role` int(1) NOT NULL DEFAULT '0' COMMENT '0-user',
++  `Hasavatar` tinyint(1) NOT NULL DEFAULT '0',
++  PRIMARY KEY (`ID`)
++) ENGINE=InnoDB  DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_520_ci AUTO_INCREMENT=3 ;
++
++--
++-- Dumping data for table `users`
++--
++
++INSERT INTO `users` (`ID`, `Password`, `Login`, `Username`, `Name`, `Email`, `Address`, `Comments`, `Birtday`, `Language`, `Style`, `Role`, `Hasavatar`) VALUES
++(0, 'd8578edf8458ce06fbc5bb76a58c5ca4', 'admin', NULL, NULL, 'test@gmail.com', NULL, NULL, NULL, 0, 0, 0, 0);
++
++/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
++/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
++/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1395508089000)
++++ .idea/workspace.xml	(revision )
+@@ -77,7 +77,7 @@
+       <file leaf-file-name="forum.php" pinned="false" current="true" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/protected/views/site/forum.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state line="8" column="5" selection-start="105" selection-end="105" vertical-scroll-proportion="0.9714286" vertical-offset="0" max-vertical-offset="238">
++            <state line="8" column="5" selection-start="105" selection-end="105" vertical-scroll-proportion="0.24908425" vertical-offset="0" max-vertical-offset="546">
+               <folding />
+             </state>
+           </provider>
+@@ -130,7 +130,8 @@
+   </component>
+   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+   <component name="ProjectFrameBounds">
+-    <option name="x" value="172" />
++    <option name="x" value="221" />
++    <option name="y" value="9" />
+     <option name="width" value="1217" />
+     <option name="height" value="732" />
+   </component>
+@@ -160,6 +161,7 @@
+       <sortByType />
+     </navigator>
+     <panes>
++      <pane id="Scope" />
+       <pane id="ProjectPane">
+         <subPane>
+           <PATH>
+@@ -194,7 +196,6 @@
+           </PATH>
+         </subPane>
+       </pane>
+-      <pane id="Scope" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+@@ -202,8 +203,8 @@
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="options.lastSelected" value="web-ide.project.structure" />
+     <property name="FullScreen" value="false" />
+-    <property name="options.splitter.details.proportions" value="0.2" />
+     <property name="options.searchVisible" value="true" />
++    <property name="options.splitter.details.proportions" value="0.2" />
+   </component>
+   <component name="RunManager">
+     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+@@ -262,29 +263,33 @@
+       <created>1395507777001</created>
+       <updated>1395507777001</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="new baza">
++      <created>1395508091192</created>
++      <updated>1395508091192</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="172" y="0" width="1217" height="732" extended-state="0" />
++    <frame x="221" y="9" width="1217" height="732" extended-state="0" />
+     <editor active="false" />
+     <layout>
+-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6558966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6558966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25541127" sideWeight="0.3441034" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25974026" sideWeight="0.3441034" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
++      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+@@ -413,7 +418,7 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/protected/views/site/forum.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state line="8" column="5" selection-start="105" selection-end="105" vertical-scroll-proportion="0.9714286" vertical-offset="0" max-vertical-offset="238">
++        <state line="8" column="5" selection-start="105" selection-end="105" vertical-scroll-proportion="0.24908425" vertical-offset="0" max-vertical-offset="546">
+           <folding />
+         </state>
+       </provider>

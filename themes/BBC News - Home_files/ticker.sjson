@@ -1,0 +1,70 @@
+
+
+
+
+
+
+
+bbc.fmtj.net.json.model.getFeedById(0).callback(
+
+{
+	"name" : "ticker",
+	"version" : "0.1",
+	"published" : "",
+	"entries" : [
+ 							{
+				"headline": "Gunmen gain entry to a luxury hotel in the Afghan capital Kabul and fire shots, witnesses say",
+				"prompt": "LATEST",
+								"url": "http://www.bbc.co.uk/news/world-asia-26675253",
+								"isLive": "false",
+				"isBreaking": "false",
+				"mediaType": "Standard"
+			}
+						,
+								{
+				"headline": "Claims UK soldiers unlawfully killed Iraqi civilians in 2004 not supported by inquiry evidence, family lawyers say",
+				"prompt": "LATEST",
+								"url": "http://www.bbc.co.uk/news/uk-26672966",
+								"isLive": "false",
+				"isBreaking": "false",
+				"mediaType": "Standard"
+			}
+						,
+								{
+				"headline": "A care worker who raped three women with severe learning disabilities in the home where he worked is jailed for 14 years",
+				"prompt": "LATEST",
+								"url": "http://www.bbc.co.uk/news/uk-england-gloucestershire-26662512",
+								"isLive": "false",
+				"isBreaking": "false",
+				"mediaType": "Standard"
+			}
+						,
+								{
+				"headline": "Kensington Palace reveal Prince George's new nanny will be Norland College-trained Maria Teresa Turrion Borrallo",
+				"prompt": "LATEST",
+								"isLive": "false",
+				"isBreaking": "false",
+				"mediaType": "Standard"
+			}
+						,
+								{
+				"headline": "US President Barack Obama announces further sanctions on Russian officials and a Russian bank over crisis in Crimea",
+				"prompt": "LATEST",
+								"url": "http://www.bbc.co.uk/news/world-europe-26672089",
+								"isLive": "false",
+				"isBreaking": "false",
+				"mediaType": "Standard"
+			}
+						,
+								{
+				"headline": "Funeral of RMT union leader Bob Crow to take place on 24 March, with a private service, union says",
+				"prompt": "LATEST",
+								"isLive": "false",
+				"isBreaking": "false",
+				"mediaType": "Standard"
+			}
+								]
+
+
+
+});
