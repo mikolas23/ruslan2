@@ -37,7 +37,8 @@
                 <ul class="current">
                 <?php $this->widget('zii.widgets.CMenu', array(
                     'items' => array(
-                        array('label' => 'Головна сторінка', 'url' => array('/site/index')),
+                        array('label' => 'Головна
+                        ', 'url' => array('/site/index')),
 
                         array('label' => 'Форум', 'url' => array('/site/forum')),
                         array('label' => 'Адмін', 'url' => array('/admin')),
