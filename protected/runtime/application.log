@@ -2212,3 +2212,185 @@ Stack trace:
 REQUEST_URI=/ruslan/index.php?r=admin/category
 HTTP_REFERER=http://localhost/ruslan/index.php?r=admin/users/index
 ---
+2014/03/28 06:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/5".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/5')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/5
+HTTP_REFERER=http://localhost/ruslan2/
+---
+2014/03/28 06:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:25:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:31:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:31:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:31:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:31:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/registtion
+---
+2014/03/28 06:34:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/1".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/1')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/1
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=site/forum
+---
+2014/03/28 06:34:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=news/index/id/1
+---
+2014/03/28 06:34:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/3".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/3')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/3
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=news/index/id/2
+---
+2014/03/28 06:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/4".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/4')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/4
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=news/index/id/3
+---
+2014/03/28 06:34:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\wamp\www\ruslan2\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/users/cre...')
+#3 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/ruslan2/index.php?r=admin/users/create
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=admin/users/index
+---
+2014/03/28 06:34:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/category".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=admin/category
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=admin/users/index
+---
+2014/03/28 06:37:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/category".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/category')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=admin/category
+HTTP_REFERER=http://localhost/ruslan2/index.php?r=admin/users/index
+---
+2014/03/28 07:10:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/
+---
+2014/03/28 07:11:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/
+---
+2014/03/28 07:12:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/index/id/2".' in C:\wamp\www\ruslan2\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\ruslan2\framework\web\CWebApplication.php(141): CWebApplication->runController('news/index/id/2')
+#1 C:\wamp\www\ruslan2\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\ruslan2\index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/ruslan2/index.php?r=news/index/id/2
+HTTP_REFERER=http://localhost/ruslan2/
+---

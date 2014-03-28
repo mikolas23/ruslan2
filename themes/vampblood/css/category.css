@@ -33,7 +33,7 @@
 
 #category ul li a:hover, #category ul li.active a
 {
-    color: #E5B1B5;
-    background-color:#2A2A2A;
+    background: #0a75c5;
+    color: #fff;
     text-decoration:none;
 }

@@ -15,6 +15,7 @@
     <!--[if lt IE 8]>
 
     <![endif]-->
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/styles.css"/>
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/main.css"/>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/category.css"/>
@@ -32,11 +33,12 @@
             <div class="it"></div>
             <div id="flag" class="flag"></div>
             <div id="flag_br" class="flag"></div>
-            <div id="mainmenu">
+            <div class="glossymenu">
+                <ul class="current">
                 <?php $this->widget('zii.widgets.CMenu', array(
                     'items' => array(
-                        array('label' => 'Home', 'url' => array('/site/index')),
-                        array('label' => 'Контакти', 'url' => array('/site/contact')),
+                        array('label' => 'Головна сторінка', 'url' => array('/site/index')),
+
                         array('label' => 'Форум', 'url' => array('/site/forum')),
                         array('label' => 'Адмін', 'url' => array('/admin')),
                         array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
@@ -45,6 +47,7 @@
 
                     ),
                 )); ?>
+                    </ul>
             </div>
             <?php echo CHtml::encode(Yii::app()->name); ?></div>
 
@@ -70,8 +73,8 @@
         <?php echo $content; ?>
 
         <div id="footer">
-            Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-            All Rights Reserved.<br/>
+             <?php echo date('Y'); ?> <br/>
+          .<br/>
             <?php echo Yii::powered(); ?>
         </div>
         <!-- footer -->
